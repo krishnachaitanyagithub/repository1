@@ -1,0 +1,92 @@
+Git Basics
+Check Git Version
+git --version
+Shows the current Git version.
+========================================================
+Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Set your Git username and email.
+============================================================
+Initialize a Repository
+git init
+======================================================
+Create a new Git repository.
+Clone a Repository
+git clone https://github.com/username/repo.git
+Copy an existing repository.
+======================================================
+Check Repository Status
+git status
+Show changes in your working directory and staging area.
+======================================================
+Add Changes
+git add filename
+git add .
+Stage changes for the next commit (use . to add all changes).
+Commit Changes
+git commit -m "Your commit message"
+Save your staged changes with a message.
+======================================================
+View Commit History
+git log
+See a list of recent commits.
+======================================================
+View Differences
+git diff
+Show changes between your working directory and the last commit.
+======================================================
+Branching
+List Branches
+git branch
+Show all branches in your repository.
+======================================================
+Create a New Branch
+git branch branch-name
+Create a new branch.
+======================================================
+Switch to a Branch
+git checkout branch-name
+Switch to the specified branch.
+======================================================
+Create and Switch to a Branch
+git checkout -b branch-name
+Create and switch to a new branch in one command.
+======================================================
+Merge a Branch
+git checkout main
+git merge branch-name
+Merge changes from one branch into another (e.g., merging branch-name 
+into main).
+=========================================================================
+================================
+Remote Repositories
+Add a Remote Repository
+git remote add origin https://github.com/username/repo.git
+Link your local repository to a remote one.
+======================================================
+Push Changes to Remote
+git push origin branch-name
+Upload your commits to the remote repository.
+======================================================
+Pull Changes from Remote
+git pull origin branch-name
+Fetch and merge changes from the remote repository.
+======================================================
+Fetch Remote Changes
+git fetch
+Get updates from the remote repository without merging.
+======================================================
+Undoing Changes
+Unstage Changes
+git reset filename
+Remove files from the staging area.
+======================================================
+Revert a Commit
+git revert commit-id
+Create a new commit that undoes changes from a previous commit.
+======================================================
+Reset to a Previous Commit
+git reset --hard commit-id
+Reset your working directory and staging area to a specific commit (use 
+with caution).
